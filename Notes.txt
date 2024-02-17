@@ -1,0 +1,15 @@
+create a new Azure Functions project using the Azure Functions Core Tools
+func init myfunctionapp --python
+
+Create a New Function:
+After initializing the project, navigate to the project directory and create a new function by running the following command:
+
+cd myfunctionapp
+func new --name myfunction --template "HTTP trigger"
+
+Write Python code -
+go to directory myfunction and  edit the __init__.py file to write your Python code.
+ code is here azureFunction.py
+
+Deploy this - Run the following command in the terminal:
+func azure functionapp publish myfunctionapp
